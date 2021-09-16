@@ -1,21 +1,19 @@
-package week1.day2;
+package week2.day1;
 
 public class Pallindrome {
 
 	public static void main(String[] args) {
-	 int num =456;
-	 int temp =num;
-	 int sum=0,r;
-	 while (num>0) {
-		 r=num%10;
-		 sum=(sum*10)+r;
-		 num=num/10;
-		
-	 }
-if(temp==sum)	
-	System.out.println("pallindrome number");
-else
-	System.out.println("not pallindrome");
+		// TODO Auto-generated method stub
+		String val = "madam", rev = "";
+		int length = val.length();
+		for (int i = length - 1; i >= 0; i--) {
+			rev = rev + val.charAt(i);
+		}
+		if (val.equals(rev))
+			System.out.println(val + " is a Palindrome");
+		else
+			System.out.println(val + " is not a Palindrome");
+
 	}
 
 }
